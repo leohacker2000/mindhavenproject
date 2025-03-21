@@ -1,0 +1,125 @@
+.main-container {
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.signup-btn, .login-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.signup-btn {
+  background-color: rgb(59, 121, 59);
+  color: white;
+  margin-right: 1rem;
+}
+
+.login-btn {
+  background-color: rgb(162, 233, 162);
+  color: rgb(28, 54, 27);
+}
+
+.signup-btn:hover, .login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us, .resources {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+
+.about-us {
+  border-right: 1px solid #ddd;
+}
+
+h2 {
+  color: rgb(59, 121, 59);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.resources ul {
+  padding-left: 1.5rem;
+}
+
+.resources li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+  }
+  
+  .about-us {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-buttons {
+    justify-content: center;
+    position: relative;
+  }
+}

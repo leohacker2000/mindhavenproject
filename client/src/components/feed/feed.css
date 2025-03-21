@@ -1,0 +1,13 @@
+.feed {
+    flex: 6;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .feed.shrink {
+    margin-left: 250px; /* Adjusts when sidebar is open */
+  }
+  
+  .feedWrapper {
+    padding: 20px;
+  }
+  

@@ -1,0 +1,84 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #7ff396;
+  overflow-y: auto;
+  transform: translateX(-100%); 
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); 
+}
+
+.menuButton {
+  position:fixed;
+  top: 20px;
+  left: 20px;
+  background: #7ff396;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 5px;
+  font-size: 5px;
+}
+
+.menuButton:hover {
+  background: #66d285;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebarListItem:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.sidebarHr {
+  margin: 20px 0;
+}
+
+.sidebarFriendList {
+  list-style: none;
+  padding: 0;
+}

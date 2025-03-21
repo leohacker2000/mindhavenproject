@@ -1,0 +1,115 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 600;
+  color: #4db6ac;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.loginDesc {
+  font-size: 20px;
+  color: #616161;
+  line-height: 1.6;
+}
+
+.loginBox {
+  height: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginInput {
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.loginInput:focus {
+  outline: none;
+  border-color: #4db6ac;
+  box-shadow: 0 0 5px rgba(77, 182, 172, 0.5);
+}
+
+.loginButton {
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4db6ac;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:focus {
+  outline: none;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: #80cbc4;
+}
+
+.loginForgot {
+  text-align: center;
+  color: #4db6ac;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.loginForgot:hover {
+  color: #26a69a;
+}
+
+.loginRegisterButton {
+  width: 60%;
+  align-self: center;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  background-color: #81c784;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.loginRegisterButton:hover {
+  background-color: #66bb6a;
+}
